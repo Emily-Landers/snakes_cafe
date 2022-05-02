@@ -49,11 +49,11 @@ def order():
         answer = input("> ")
         if answer == "quit":
             currentOrder = False
-    else:
-       if answer in custOrder.keys():
-           custOrder[answer] += 1
-       else:
-            custOrder[answer] = 1
+        else:
+            if answer in custOrder.keys():
+                custOrder[answer] += 1
+            else:
+                custOrder[answer] = 1
             num = custOrder[answer]
             if num == 1:
                 orders = "order"
